@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHW-P-35</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    
+    <header class="my-[50px]">
+        <nav class="w-11/12 mx-auto py-2 flex justify-between items-center flex-wrap items-center">
+            <div id="logo" class="w-[150px]">
+                <img src="./ph-tube-resources-main/Logo.png" alt="" class="">
+            </div>
+            <div id="search"><input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" /></div>
+            <div id="sort"><button>Sort</button></div>
+        </nav>
+        <hr class="mt-[75px]">
+    </header>
+    <main class="w-[80%] mx-auto py-[20px]">
+        <div id="categories" class="mx-auto w-[100%] flex justify-center flex-wrap gap-[25px] items-center">
+            <button class="bg-[red] p-[25px] border-none rounded-[10px]">All</button>
+        </div>
+        <div id="videos">
+            <div>
+                <div id="thumbnailDiv"><img src="" alt=""></div>
+                <div id="titleDiv"><img src="" alt=""><p id="title"></p></div>
+                <div id="authorsDiv"><p id="authors"></p></div>
+                <div id="viewsDiv"><p id="views"></p></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./categoryBtn.js"></script>
+    <script src="./video.js"></script>
+
 </body>
 </html>
